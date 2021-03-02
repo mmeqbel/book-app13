@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="../../../styles/base.css">
+</head>
+<body>
+    <main>
+        
+        <div class="grid-container">
+            <% results.forEach((item) => {%>
+            <div class="grid-item">
+              <img src="<%= item.image_url%>" alt="">
+              <p class="grid-title"><%= item.title %></p>
+              <br>
+              <p class="grid-author"><%= item.authorName %></p>
+              <br>
+              <p class="grid-discriptioon"><%= item.description %></p>
+              <br>
+              <form action="/books" method="POST">
+                <input type="hidden" name="item" value="<%=JSON.stringify(item)%>">
+                <input type="submit" value="Select This Book">
+              </form>
+            </div >
+            <% }) %>
+        </div>
+       
+        
+    </main>
+   
+</body>
+</html>

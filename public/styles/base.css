@@ -1,0 +1,47 @@
+@import '../styles/reset.css';
+@import '../styles/layout.css';
+@import '../styles/modules.css';
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(134, 127, 127);
+    width:100%;
+}
+header{
+    padding: 16px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(87, 80, 80);
+}
+.books-container{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+.grid-item{
+    background-color: lightgrey;
+    padding-bottom: 20px;
+    margin-top: 32px;
+    width: 100%;
+    text-align: center;
+}
+.book-img{
+    width: 40%;
+    height: 300px;
+}
+.selectBookBtn{
+    background-color: black;
+    padding: 16px;
+    color: white;
+    font-size: 0.5vw;
+}
+
+
+
+
+

@@ -1,0 +1,26 @@
+<section class="books-container">
+    <header>
+        <%=books.length%>
+            <h1>Saved Book</h1>
+            <a href="/">HOME PAGE</a>
+    </header>
+    <%books.forEach(element=>{%>
+        <div class="grid-item">
+            <br>
+            <img class="book-img" src="<%=element.image_url%>">
+            <br>
+            <p class="book-title">
+                <%=element.title%>
+            </p><br>
+            <p class="book-author">
+                <%=element.author%>
+            </p><br>
+           
+            <form action="/books" method="POST">
+                <input type="hidden" name="item" value="<%=JSON.stringify(element)%>">
+               <input type="submit" value="Select This Book">
+              </form>
+            
+        </div>
+        <%})%>
+</section>
