@@ -40,8 +40,27 @@ header{
     color: white;
     font-size: 0.5vw;
 }
+.public-header{
+    background-color: #333;
+    padding: auto;
+}
+.public-header li {
+    float: left;
 
-
+}
+.public-header li a {
+    text-decoration: none;
+    text-align: center;
+    padding: 16px;
+    color: white;
+}
+.public-header ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+.public-header a:hover {
+    background-color: #111;
+}
 
 
 
