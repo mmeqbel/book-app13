@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 h1{
-    color: white;
+    color: black;
     font-weight: bolder;
     font-size: larger;
 }
@@ -14,23 +14,22 @@ h1{
     padding: 16px;
     text-align: center;
 }
-.btn-detail{
+.btn-detail,input[type=submit],#update-button{
     padding: 8px;
-    text-align: center;
-    font-size: larger;
+    font-size: medium;
     color: white;
     background-color: black;
 }
 
 body{
-    background-color: rgb(134, 127, 127);
+    background-color: #c7c7c7;
     width:100%;
 }
 header{
     padding: 16px;
     width: 100%;
     text-align: center;
-    background-color: rgb(87, 80, 80);
+    background-color: #ffffff;
 }
 .books-container{
     width: 50%;
@@ -41,10 +40,12 @@ header{
     overflow: hidden;
 }
 .book-item{
-    background-color: lightgrey;
+    box-shadow: 5px 10px 18px #888888;
+    background-color: #ffffff;
     padding-bottom: 20px;
     margin-top: 32px;
     width: 100%;
+    margin: 8px;
     text-align: center;
 }
 .book-img{
@@ -58,7 +59,7 @@ header{
     font-size: 0.5vw;
 }
 .public-header{
-    background-color: #333;
+    background-color: #ffffff;
     padding: auto;
 }
 .public-header li {
@@ -69,14 +70,14 @@ header{
     text-decoration: none;
     text-align: center;
     padding: 16px;
-    color: white;
+    color: black;
 }
 .public-header ul {
     list-style-type: none;
     overflow: hidden;
 }
 .public-header a:hover {
-    background-color: #111;
+    background-color: #c7c7c7;
 }
 
 .form-container{
