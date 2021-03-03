@@ -5,6 +5,23 @@
 *{
     box-sizing: border-box;
 }
+h1{
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+}
+.book-info{
+    padding: 16px;
+    text-align: center;
+}
+.btn-detail{
+    padding: 8px;
+    text-align: center;
+    font-size: larger;
+    color: white;
+    background-color: black;
+}
+
 body{
     background-color: rgb(134, 127, 127);
     width:100%;
@@ -23,7 +40,7 @@ header{
     justify-content: space-evenly;
     overflow: hidden;
 }
-.grid-item{
+.book-item{
     background-color: lightgrey;
     padding-bottom: 20px;
     margin-top: 32px;
@@ -40,8 +57,52 @@ header{
     color: white;
     font-size: 0.5vw;
 }
+.public-header{
+    background-color: #333;
+    padding: auto;
+}
+.public-header li {
+    float: left;
 
+}
+.public-header li a {
+    text-decoration: none;
+    text-align: center;
+    padding: 16px;
+    color: white;
+}
+.public-header ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+.public-header a:hover {
+    background-color: #111;
+}
 
+.form-container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+.flex-item{
+    background-color: lightgrey;
+    margin-top: 32px;
+    padding: 16px;
+    width: 100%;
+    text-align: center;
+}
+.submit{
+    background-color: black;
+    color: white;
+    margin-top: 32px;
+    padding: 16px;
+    width: 50%;
+    text-align: center; 
+    align-self: flex-end;
+    
+}
 
 
 
