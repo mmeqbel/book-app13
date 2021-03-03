@@ -19,8 +19,8 @@ dotenv.config(); //configure .env file
 
 const PORT = process.env.PORT;
 
-//const client = new pg.Client(process.env.DATABASE_URL);     //configure  client db
-const client = new pg.Client({ connectionString: process.env.DATABASE_URL, ssl: { rejectUnauthorized: false } });//heroko
+const client = new pg.Client(process.env.DATABASE_URL);     //configure  client db
+//const client = new pg.Client({ connectionString: process.env.DATABASE_URL, ssl: { rejectUnauthorized: false } });//heroko
 const app = express();
 app.use(cors());
 app.use(express.static('./public/'));

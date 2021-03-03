@@ -10,9 +10,11 @@
 <body>
   <%- include('../../layout/header')%>
     <main>
-        <div class="grid-container">
+        <div class="books-container">
             <% results.forEach((item) => {%>
-            <div class="grid-item">
+            <div class="book-item">
+              <br>
+              <br>
               <img src="<%= item.image_url%>" alt="">
               <p class="grid-title"><%= item.title %></p>
               <br>

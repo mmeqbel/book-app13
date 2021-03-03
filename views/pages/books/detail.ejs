@@ -6,6 +6,8 @@
             <br>
             <img class="book-img" src="<%=element.image_url%>">
             <br>
+            <br>
+            <br>
             <p class="book-title">
                 <%=element.title%>
             </p><br>
@@ -16,10 +18,15 @@
             <p class="book-desc">
                 <%=element.description%>
             </p><br>
-            <button id="update-button">update this book</button>
-            <form action="/books/<%=books[0].id%>?_method=DELETE" method="POST">
-                <input type="submit" id="delete-button" value="delete this book">
-            </form>
+            <div>
+                <input type="submit" id="update-button" value="UPDATE">
+                <br>
+                <br>
+                <form action="/books/<%=books[0].id%>?_method=DELETE" method="POST">
+                    <input type="submit" id="delete-button" value="DELETE">
+                </form> 
+            </div>
+            
         </div>
         <%})%>
 </section>
