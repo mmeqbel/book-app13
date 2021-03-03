@@ -1,0 +1,9 @@
+<form id="update-form" class="form-container" action="/books/<%=books[0].id%>?_method=PUT" method="POST">
+    <input class="flex-item" type="text" name="title" value="<%=books[0].title%>">
+    <input class="flex-item" type="text" name="author" value="<%=books[0].author%>">
+    <input class="flex-item" type="text" name="isbn" value="<%=books[0].isbn%>">
+    <input class="flex-item" type="text" name="image_url" value="<%=books[0].image_url%>">
+    <input class="flex-item" type="text" name="description" value="<%=books[0].description%>">
+    <input class="flex-item submit" type="submit" name="submit" placeholder="update book">
+</form>
+

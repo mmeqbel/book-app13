@@ -20,15 +20,18 @@
         <section class="grid-container">
         <form action="/searches/show" method="POST">
             <div class="grid-item">
+                <br>
             <input type="text" name="searchQuery" placeholder="Enter a title or author">
+                <br>
                 <br>
                 <label for="title-radio"> Title</label>
                 <input id="title-radio" type="radio" name="searchBy" value="intitle">
                 <br>
+                <br>
                 <label for="author-radio"> Author</label>
                 <input id="author-radio" type="radio" name="searchBy" value="inauthor">
                 <br>
-            <button class="selectBookBtn" name="search" id="search" value="search"> Search by the Google Book API </button>
+            <input type="submit" class="selectBookBtn" name="search" id="search" value="search">
         </form>
     </div>
     </section>

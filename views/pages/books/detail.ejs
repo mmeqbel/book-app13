@@ -1,10 +1,8 @@
 <section class="books-container">
-    <header>
-        <%=books.length%>
-            <h1>Saved Book</h1>
-    </header>
+    <%- include('../../layout/edit')%>
+
     <%books.forEach(element=>{%>
-        <div class="grid-item">
+        <div class="book-item">
             <br>
             <img class="book-img" src="<%=element.image_url%>">
             <br>
@@ -18,7 +16,10 @@
             <p class="book-desc">
                 <%=element.description%>
             </p><br>
-            
+            <button id="update-button">update this book</button>
+            <form action="/books/<%=books[0].id%>?_method=DELETE" method="POST">
+                <input type="submit" id="delete-button" value="delete this book">
+            </form>
         </div>
         <%})%>
 </section>
